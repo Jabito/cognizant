@@ -27,7 +27,7 @@ angular.module('starter.controllers', [])
       effect: 'fade',
       speed: 500,
     };
-
+    //This holds all the data for referrals the user has.
     $scope.referrals = [{
       "name": "Paolo Calaguian",
       "imageurl": "img/paopic.jpg",
@@ -72,7 +72,7 @@ angular.module('starter.controllers', [])
       "TokensReceived": "20"
 
     }];
-
+    //This holds the achievements the user currently has.
     $scope.medaldata = [{
       "title": "Perfect Attendance Achievement",
       "rank": "gold",
