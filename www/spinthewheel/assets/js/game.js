@@ -8,12 +8,12 @@ var canSpin;
 var slices = 8;
 // prize names, starting from 12 o'clock going clockwise
 var slicePrizes = [
-    'a Grab Promo Code','a Grab Promo Code','a Grab Promo Code',
-    'P100 worth of GC','P100 worth of GC',
-    'a 4GB Flash Drive','a 4GB Flash Drive',
-    '1 Day Leave with Pay','1 Day Leave with Pay',
+    'a Grab Promo Code', 'a Grab Promo Code', 'a Grab Promo Code',
+    'P100 worth of GC', 'P100 worth of GC',
+    'a 4GB Flash Drive', 'a 4GB Flash Drive',
+    '1 Day Leave with Pay', '1 Day Leave with Pay',
     'the Jackpot!'
-    ];
+];
 // equivalent value
 // the prize you are about to win
 var prize;
@@ -49,16 +49,18 @@ playGame.prototype = {
         // adding the wheel in the middle of the canvas
         wheel = game.add.sprite(game.width / 2, game.height / 2.5, "wheel");
         // scale down the wheel
-        wheel.scale.set(0.3);
-        // setting wheel registration point in its center
-        wheel.anchor.set(0.5,0.5);
+        wheel.scale.set(0.25);
+        // setting wheel registr    ation point in its center
+        wheel.anchor.set(0.5, 0.5);
         // adding the pin in the middle of the canvas
         var pin = game.add.sprite(game.width / 2, game.height / 2.5, "pin");
         // setting pin registration point in its center
         pin.anchor.set(0.5);
+        //style for text
+        style = { font: "bold 16px Arial", fill: "#000", boundsAlignH: "center", boundsAlignV: "middle" };
         // adding the text field
-        prizeText = game.add.text(game.world.centerX, game.world.height* 0.8, "");
-        infoText = game.add.text(game.world.centerX, game.world.height * 0.9, "");
+        prizeText = game.add.text(game.world.centerX, game.world.height * 0.8, "", style);
+        infoText = game.add.text(game.world.centerX, game.world.height * 0.9, "", style);
         // setting text field registration point in its center
         prizeText.anchor.set(0.5);
         infoText.anchor.set(0.5);
@@ -98,7 +100,7 @@ playGame.prototype = {
         // now we can spin the wheel again
         canSpin = true;
         // writing the prize you just won
-        prizeText.text = "Congratulation! You won " + slicePrizes[prize] + "!";
+        prizeText.text = "You won " + slicePrizes[prize] + "!";
         // writing the info
         infoText.text = "You may claim your prize at the HR office.";
     }
