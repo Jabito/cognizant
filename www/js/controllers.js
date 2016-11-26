@@ -40,17 +40,17 @@ angular.module('starter.controllers', [])
       "TokensReceived": "3"
     }, {
       "name": "Ace Ellasos",
-      "imageurl": "",
+      "imageurl": "img/acepic.jpg",
       "StartDate": "August 28, 2013",
       "TokensReceived": "1"
     }, {
       "name": "Bryan Dela Cruz",
-      "imageurl": "",
+      "imageurl": "img/brypic.jpg",
       "StartDate": "May 2, 2011",
       "TokensReceived": "3"
     }, {
       "name": "Joar Celis",
-      "imageurl": "",
+      "imageurl": "img/joarpic.jpg",
       "StartDate": "July 28, 2011",
       "TokensReceived": "2"
 
@@ -67,7 +67,7 @@ angular.module('starter.controllers', [])
 
     }, {
       "name": "Aresh Saharkhiz",
-      "imageurl": "",
+      "imageurl": "img/areshpic.jpg",
       "StartDate": "March 18, 2005",
       "TokensReceived": "20"
 
