@@ -1,0 +1,59 @@
+.sidemenupic{
+    border-radius: 50%;
+    padding: 0px;
+    width: 50%;
+    border-style: double;
+    border-width: 5px;
+}
+
+.profilepic{
+    border-radius: 50%;
+    padding: 0px;
+    width: 50%;
+    border-style: double;
+    border-width: 5px;
+}
+
+.menuprofileholder{
+    position: relative; 
+    float: left; 
+    left: 10px; 
+    top: 90px;
+}
+
+.sidemenucontent{
+    height: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+td.cell{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px; 
+}
+
+.achimage{
+    margin-left: 10%;
+    width: 100px;
+    height: auto;
+}
+
+.tokenimage{
+    width: 100px;
+    height: auto;
+}
+
+.bottom{
+    padding-bottom: 10%;
+}
+
+div{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.tokenright{
+    float: right;
+}

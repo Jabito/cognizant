@@ -1,0 +1,77 @@
+<ion-view view-title="Profile">
+  <ion-content>
+    <div class="profilearea row">
+      <div class="col-33" style="margin-left: 10%;">
+        <img src="{{userimage}}" class="profilepic" />
+      </div>
+      <div class="col-66" style="width: 50%;">
+        <table>
+          <tr>
+            <td>
+              <h1>Welcome, {{username}}</h1>
+            </td>
+          </tr>
+          <tr>
+            <td class="cell">
+              Employee Email:
+            </td>
+            <td class="cell">
+              {{useremail}}
+            </td>
+          </tr>
+          <tr>
+            <td class="cell">
+              Employee Number:
+            </td>
+            <td class="cell">
+              {{employeenumber}}
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <center>
+      <h1>Achievements</h1>
+    </center>
+
+    <ion-slides options="options" slider="data.slider">
+      <ion-slide-page>
+        <div class="box blue">
+          <h1>BLUE</h1>
+        </div>
+      </ion-slide-page>
+      <ion-slide-page>
+        <div class="box yellow">
+          <h1>YELLOW</h1>
+        </div>
+      </ion-slide-page>
+      <ion-slide-page>
+        <div class="box pink">
+          <h1>PINK</h1>
+        </div>
+      </ion-slide-page>
+    </ion-slides>
+
+    <div class="row">
+      <div class="achievementarea col-20" ng-repeat="medal in medaldata">
+        <center>
+          {{medal.title}}
+          <div class="col">
+            <img src="img/{{medal.rank}}.png" class="achimage" />
+          </div>
+          {{medal.current}} out of {{medal.max}}
+        </center>
+      </div>
+    </div>
+    <div class="tokenarea" style="margin-top: 100px;">
+      <center>
+        <h1>Tokens</h1>
+        <img src="img/tokens.jpg" class="tokenimage" />
+        <p>You have {{tokens}} tokens</p>
+
+        <h2><a href="#app/redeem" class="bottom">Redeem an Item</a></h2>
+      </center>
+    </div>
+  </ion-content>
+</ion-view>
