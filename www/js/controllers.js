@@ -104,6 +104,7 @@ angular.module('starter.controllers', [])
       "max": "30",
       "current": "3"
     }, {
+      
       "title": "Volounteering",
       "rank": "silver",
       "max": "20",
