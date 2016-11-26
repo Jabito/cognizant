@@ -43,6 +43,11 @@ td.cell{
     width: 100%;
     height: auto;
 }
+.volimage{
+    margin-left: 30%;
+    width: 100%;
+    height: auto;
+}
 
 .tokenimage{
 	float: left;
