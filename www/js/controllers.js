@@ -30,46 +30,46 @@ angular.module('starter.controllers', [])
 
     $scope.referrals = [{
       "name": "Paolo Calaguian",
-      "imageurl": "",
+      "imageurl": "img/paopic.jpg",
       "StartDate": "November 21,2014",
-      "TokensReceieved": "1"
+      "TokensReceived": "1"
     }, {
       "name": "Francisco Aquino III",
-      "imageurl": "",
+      "imageurl": "img/aquinopic.jpg",
       "StartDate": "January 15,2010",
-      "TokensReceieved": "3"
+      "TokensReceived": "3"
     }, {
       "name": "Ace Ellasos",
       "imageurl": "",
       "StartDate": "August 28, 2013",
-      "TokensReceieved": "1"
+      "TokensReceived": "1"
     }, {
       "name": "Bryan Dela Cruz",
       "imageurl": "",
       "StartDate": "May 2, 2011",
-      "TokensReceieved": "3"
+      "TokensReceived": "3"
     }, {
       "name": "Joar Celis",
       "imageurl": "",
       "StartDate": "July 28, 2011",
-      "TokensReceieved": "2"
+      "TokensReceived": "2"
 
     }, {
       "name": "Timothy Aranzanso",
-      "imageurl": "",
+      "imageurl": "img/timpic.jpg",
       "StartDate": "November 20, 2009",
-      "TokensReceieved": "4"
+      "TokensReceived": "4"
     }, {
       "name": "Paolo Javier",
-      "imageurl": "",
+      "imageurl": "img/jabitopic.jpg",
       "StartDate": "Feb 10, 2008",
-      "TokensReceieved": "6"
+      "TokensReceived": "6"
 
     }, {
       "name": "Aresh Saharkhiz",
       "imageurl": "",
       "StartDate": "March 18, 2005",
-      "TokensReceieved": "20"
+      "TokensReceived": "20"
 
     }];
 

@@ -1,8 +1,11 @@
 <ion-view view-title="Referrals">
   <ion-content>
-    <div class="row" ng-repeat="person in referrals">
-      <div class="col">
+    <div class="row">
+      <div class="col border" ng-repeat="person in referrals">
         <center>
+          {{person.name}}<br />
+          <img src="{{person.imageurl}}" width="100px" height="100px" /><br /> {{person.StartDate}}
+          <br /> Bonus Tokens Received : {{person.TokensReceived}}
         </center>
       </div>
     </div>
