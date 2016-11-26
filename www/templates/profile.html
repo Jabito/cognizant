@@ -3,9 +3,9 @@
     <div class="profilearea row">
       <div class="col-40" style="margin-left: 10%; margin-top: 0%;">
         <img src="{{userimage}}" class="profilepic" /><br />
-		<p style="margin-left: 5%; font-size: 6vw;">{{username}}</p>
+        <p style="margin-left: 5%; font-size: 6vw;">{{username}}</p>
       </div>
-      <div class="col-60" style="margin-left: 0px; width: 100%;">
+      <div class="col-60" style="margin-left: 0px; margin-top: 5%; width: 100%;">
         <table>
           <tr>
             <td>
@@ -36,26 +36,29 @@
     </center>
 
     <div class="row">
-      <div class=" col-33" ng-repeat="medal in medaldata">
-        <center class="achicontent">
-<h4 style="margin-left: 15%; font-size: 4vw;">{{medal.title}}</h4>
-          <div class="col">
-            <img src="img/{{medal.rank}}.png" class="achimage" width="80%" />
-          </div>
-          <h4 style="margin-left: 15%; font-size: 3vw;">{{medal.current}} out of {{medal.max}}</h4>
-        </center>
-      </div>
+      <ion-slide-box on-slide-changed="slideHasChanged($index)" class="hackslider" >
+          <ion-slide  ng-repeat="medal in medaldata">
+            <center class="achicontent">
+              <h4 class="slidetitle">{{medal.title}}</h4>
+              <div class="col">
+                <img src="img/{{medal.rank}}.png" class="achimage" />
+              </div>
+              <h4 style="font-size: 3vw;">{{medal.current}} out of {{medal.max}}</h4>
+            </center>
+          </ion-slide>
+      </ion-slide-box>
+      </center>
     </div>
     <div class="tokenarea">
       <center>
         <h1>Tokens</h1>
         <img src="img/tokens.jpg" class="tokenimage" />
       </center>
-	  <div style="float: right;" >
-	  <p style="font-size: 6vw;">You have {{tokens}} tokens</p>
+      <div style="float: right;">
+        <p style="font-size: 6vw;">You have {{tokens}} tokens</p>
 
         <h2><a href="#app/redeem" class="bottom">Redeem</a></h2>
-	  </div>
+      </div>
     </div>
   </ion-content>
 </ion-view>
