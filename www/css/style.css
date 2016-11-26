@@ -25,6 +25,7 @@
     height: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
+    background-color:#2af08a;
 }
 
 td.cell{
@@ -61,4 +62,17 @@ div{
 .border{
     border-style: double;
     border-width: 5px;
+}
+
+.box{
+    float: left; 
+    margin: 5% 5% 0% 5%;
+}
+
+.item-complex .item-content, .item-radio .item-content {
+    position: relative;
+    z-index: 2;
+    padding: 16px 49px 16px 16px;
+    border: none;
+    background-color: #2af08a !important;
 }

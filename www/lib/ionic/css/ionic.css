@@ -5272,8 +5272,11 @@ ion-tabs.tabs-striped.tabs-color-active-dark .tab-item.tab-item-active, ion-tabs
   max-height: 100%;
   width: 275px;
   background-color: #fff; }
-  .menu .scroll-content {
-    z-index: 10; }
+  .menu .scroll-content 
+  {
+    z-index: 10;
+    background-color: #11c1f3;
+  }
   .menu .bar-header {
     z-index: 11; }
 
@@ -5996,7 +5999,7 @@ button.item.item-complex {
   z-index: 2;
   padding: 16px 49px 16px 16px;
   border: none;
-  background-color: #fff; }
+  background-color:; }
 
 a.item-content {
   display: block;
