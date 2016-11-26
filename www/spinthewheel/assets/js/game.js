@@ -24,7 +24,7 @@ var infoText;
 
 window.onload = function () {
     // creation of a 458x488 game
-    game = new Phaser.Game(600, 600, Phaser.CANVAS, "container");
+    game = new Phaser.Game(300, 300, Phaser.CANVAS, "container");
     // adding "PlayGame" state
     game.state.add("PlayGame", playGame);
     // launching "PlayGame" state
@@ -49,7 +49,7 @@ playGame.prototype = {
         // adding the wheel in the middle of the canvas
         wheel = game.add.sprite(game.width / 2, game.height / 2.5, "wheel");
         // scale down the wheel
-        wheel.scale.set(0.5);
+        wheel.scale.set(0.3);
         // setting wheel registration point in its center
         wheel.anchor.set(0.5,0.5);
         // adding the pin in the middle of the canvas
@@ -57,8 +57,8 @@ playGame.prototype = {
         // setting pin registration point in its center
         pin.anchor.set(0.5);
         // adding the text field
-        prizeText = game.add.text(game.world.centerX, 480, "");
-        infoText = game.add.text(game.world.centerX, 540, "");
+        prizeText = game.add.text(game.world.centerX, game.world.height* 0.8, "");
+        infoText = game.add.text(game.world.centerX, game.world.height * 0.9, "");
         // setting text field registration point in its center
         prizeText.anchor.set(0.5);
         infoText.anchor.set(0.5);

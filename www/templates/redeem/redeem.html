@@ -1,12 +1,27 @@
 <ion-view view-title="Redeemables">
   <ion-content>
-   <center><h1>Redeem an Item</h1></center>
     <div class="row">
-      <div class="col-50" >
-        <a href="#app/wheel" style="float: right;"><img style="margin-left: 25%" src="img/wheel.png" width="100%" height="100%"/></a>
-      </div>
-      <div class="col-50">
-      </div>
+      <ion-slide-box on-slide-changed="slideHasChanged($index)" class="hackslider">
+        <ion-slide>
+          <div class="achicontent">
+            <center>
+              <a href="#app/wheel"><img src="img/wheel.png" width="100%" /></a>
+              <h3 class="achitext">1 Token</h3>
+              <h3 class="achitext">Spin the Wheel</h3>
+            </center>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div class="box yellow">
+            <h1>YELLOW</h1>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div class="box pink">
+            <h1>PINK</h1>
+          </div>
+        </ion-slide>
+      </ion-slide-box>
     </div>
   </ion-content>
 </ion-view>

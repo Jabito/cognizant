@@ -45,7 +45,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         views: {
           'menuContent': {
             templateUrl: 'templates/profile.html',
-			controller: 'ProfileCtrl'
+            controller: 'ProfileCtrl'
           }
         }
       })
@@ -63,7 +63,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         url: '/referrals',
         views: {
           'menuContent': {
-            templateUrl: 'templates/referrals/referrals.html'
+            templateUrl: 'templates/referrals/referrals.html',
+            controller: 'ReferralCtrl'
           }
         }
       })
@@ -72,7 +73,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         url: '/redeem',
         views: {
           'menuContent': {
-            templateUrl: 'templates/redeem/redeem.html'
+            templateUrl: 'templates/redeem/redeem.html',
+            controller: 'ProfileCtrl'
           }
         }
       })
