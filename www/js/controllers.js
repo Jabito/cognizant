@@ -93,6 +93,26 @@ angular.module('starter.controllers', [])
       "rank": "bronze",
       "max": "12",
       "current": "5"
+    }, {
+      "title": "Perfect Attendance Achievement",
+      "rank": "gold",
+      "max": "50",
+      "current": "40"
+    }, {
+      "title": "Referrals",
+      "rank": "bronze",
+      "max": "30",
+      "current": "3"
+    }, {
+      "title": "Volounteering",
+      "rank": "silver",
+      "max": "20",
+      "current": "8"
+    }, {
+      "title": "Attendance Achievement",
+      "rank": "bronze",
+      "max": "12",
+      "current": "5"
     }];
 
 
