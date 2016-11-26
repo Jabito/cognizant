@@ -1,57 +1,34 @@
 <ion-view view-title="Volunteer Work">
   <ion-content>
-	<div>
-		<center><h3 style="font-size: 4vw">Future Volunteering Events</h3></center>
-		<div>
-      <ion-slide-box on-slide-changed="slideHasChanged($index)">
-        <ion-slide>
-          <div class="box blue">
-            <h3 h3 style="text-align: center; font-size: 2vw" ><a href="http://www.cognizantfoundation.org/caring-for-the-special-needs-child.html?source=3">Caring for the Special Needs of childrens</a></h3>
-            <a><img src="img/volunteer1.jpg" class="volimage" width="80%"/></a>
-          </div>
-        </ion-slide>
-        <ion-slide>
-          <div class="box yellow">
+    <div class="col">
+      <center>
+        <h3 style="font-size: 4vw">Future Volunteering Events</h3>
+      </center>
+      <div class="row">
+        <ion-slide-box on-slide-changed="slideHasChanged($index)" class="hackslider">
+          <ion-slide ng-repeat="fvol in fvols">
+            <center class="achicontent">
 
-            <h3 h3 style="text-align: center; font-size: 2vw" ><a href="http://www.cognizantfoundation.org/assistive-devices-for-the-differently-abled.html?source=3">Aiding the Differently Abled with assistive devices</a></h3>
-            <a><img src="img/volunteer2.jpg" class="volimage" width="80%"/></a>
-          </div>
-        </ion-slide>
-        <ion-slide>
-          <div class="box pink">
-            <center>
-            <h3 h3 style="text-align: center; font-size: 2vw" ><a href="http://www.cognizantfoundation.org/skill-training-for-underprivileged-youth-in-telangana-2.html?source=4">Education for underprivileged youth Programs</a></h3>
+              <h3 style="font-size: 2vw"><a href="{{fvol.url}}">{{fvol.title}}</a></h3>
+              <div class="volbox">
+                <a><img src="img/{{fvol.image}}.jpg" class="volimage" width="100%" /></a>
+              </div>
             </center>
-            <a><img src="img/volunteer3.jpg" class="volimage" width="80%"/></a>
-            </div>
+          </ion-slide>
+      </div>
+    </div>
+    <hr/>
+    <div class="row">
+      <ion-slide-box on-slide-changed="slideHasChanged($index)" class="hackslider">
+        <ion-slide ng-repeat="pvol in pvols">
+          <div class="volbox">
+            <h3 style="text-align: center; font-size: 2vw"><a href="{{pvol.url}}">{{pvol.title}}</a></h3>
+            <a><img src="img/{{pvol.image}}.jpg" class="volimage" width="70%" /></a>
+            </h1>
+          </div>
         </ion-slide>
       </ion-slide-box>
-
-		</div>
-	</div>
-  <hr/>
-	<div>
-		<center><h3 style="font-size: 4vw">Past Volunteering Works</h3></center>
-		<ion-slide-box on-slide-changed="slideHasChanged($index)">
-  <ion-slide>
-    <div class="box blue">
-      <h3 h3 style="text-align: center; font-size: 2vw" ><a href="http://www.cognizantfoundation.org/medical-equipment-for-hospital-catering-to-under-privileged-women-and-children.html?source=3">Health Care Equipments Distribution</a></h3>
-      <a><img src="img/volunteer4.jpg" class="volimage" width="70%"/></a></h1>
-      </div>
-  </ion-slide>
-  <ion-slide>
-    <div class="box yellow">
-      <h3 h3 style="text-align: center; font-size: 2vw" ><a href="http://www.cognizantfoundation.org/quality-eye-care-to-underprivileged.html?source=3">Eye Care to underprivileged</a></h3>
-      <a><img src="img/volunteer5.jpg" class="volimage" width="70%"/></a>
-      </div>
-  </ion-slide>
-  <ion-slide>
-    <div class="box pink">
-      <h3 h3 style="text-align: center; font-size: 2vw" ><a href="http://www.cognizantfoundation.org/orthopedics-pathology-up-gradation.html?source=3">Orthopedics and Pathology Equipment Distribution</a></h3>
-      <a><img src="img/volunteer6.jpg" class="volimage" width="70%"/></a>
-      </div>
-  </ion-slide>
-</ion-slide-box>
-	</div>
+    </div>
+    </div>
   </ion-content>
 </ion-view>

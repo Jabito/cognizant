@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-    .controller('AppCtrl', function ($scope, $ionicModal, $timeout, $ionicSlideBoxDelegate) {
+    .controller('AppCtrl', function($scope, $ionicModal, $timeout, $ionicSlideBoxDelegate) {
 
         /*//SQL Initialization
         var db = $cordovaSQLite.openDB({ name: "my.db" });
@@ -16,6 +16,12 @@ angular.module('starter.controllers', [])
                 console.error(err);
             });
         };*/
+        //Setting up some static data
+        $scope.employeenumber = "4253627";
+        $scope.username = "Jon Snow";
+        $scope.useremail = "jonsnow@cognizant.com";
+        $scope.userimage = "img/leopic.jpg";
+        $scope.tokens = 5;
 
         // Form data for the login modal
         $scope.loginData = {};
@@ -23,107 +29,84 @@ angular.module('starter.controllers', [])
         // Create the login modal that we will use later
         $ionicModal.fromTemplateUrl('templates/login.html', {
             scope: $scope
-        }).then(function (modal) {
+        }).then(function(modal) {
             $scope.modal = modal;
         });
 
         // Triggered in the login modal to close it
-        $scope.closeLogin = function () {
+        $scope.closeLogin = function() {
             $scope.modal.hide();
         };
 
         // Open the login modal
-        $scope.login = function () {
+        $scope.login = function() {
             $scope.modal.show();
         };
 
-
-        $scope.employeenumber = "4253627";
-        $scope.username = "Jon Snow";
-        $scope.useremail = "jonsnow@cognizant.com";
-        $scope.userimage = "img/leopic.jpg";
-        $scope.tokens = 5;
         // Perform the login action when the user submits the login form
-        $scope.doLogin = function () {
+        $scope.doLogin = function() {
             console.log('Doing login', $scope.loginData);
 
             // Simulate a login delay. Remove this and replace with your login
             // code if using a login system
-            $timeout(function () {
+            $timeout(function() {
                 $scope.closeLogin();
             }, 1000);
         };
     })
 
-    .controller('ProfileCtrl', function ($scope, $stateParams, $state, $ionicSlideBoxDelegate) {
+    .controller('ProfileCtrl', function($scope, $stateParams, $state, $ionicSlideBoxDelegate, Medals) {
         // Called to navigate to the main app
-        $scope.startApp = function () {
+        $scope.startApp = function() {
             $state.go('main');
         };
-        $scope.next = function () {
+        $scope.next = function() {
             $ionicSlideBoxDelegate.next();
         };
-        $scope.previous = function () {
+        $scope.previous = function() {
             $ionicSlideBoxDelegate.previous();
         };
 
         // Called each time the slide changes
-        $scope.slideChanged = function (index) {
+        $scope.slideChanged = function(index) {
             $scope.slideIndex = index;
         };
 
-        //This holds the achievements the user currently has.
-        $scope.medaldata = [{
-            "title": "Attendance",
-            "rank": "gold",
-            "max": "50",
-            "current": "40"
-        }, {
-            "title": "Referrals",
-            "rank": "bronze",
-            "max": "30",
-            "current": "3"
-        }, {
-            "title": "Volunteering",
-            "rank": "silver",
-            "max": "20",
-            "current": "8"
-        }, {
-            "title": "Attendance",
-            "rank": "bronze",
-            "max": "12",
-            "current": "5"
-        }, {
-            "title": "Perfect Attendance Achievement",
-            "rank": "gold",
-            "max": "50",
-            "current": "40"
-        }, {
-            "title": "Referrals",
-            "rank": "bronze",
-            "max": "30",
-            "current": "3"
-        }, {
+        console.log("hit");
+        //Medals data from JSON
 
-            "title": "Volounteering",
-            "rank": "silver",
-            "max": "20",
-            "current": "8"
-        }, {
-            "title": "Attendance Achievement",
-            "rank": "bronze",
-            "max": "12",
-            "current": "5"
-        }];
-    })
-
-    .controller('AchievementCtrl', function ($scope, $stateParams) {
+        Medals.all().success(function(response) {
+            $scope.medals = response;
+        });
 
     })
 
-    .controller('ReferralCtrl', function ($scope, $stateParams) {
+    .controller('VolunteerCtrl', function($scope, $stateParams, FVols, PVols) {
+
+        FVols.all().success(function(response) {
+            $scope.fvols = response;
+        });
+        PVols.all().success(function(response) {
+            $scope.pvols = response;
+        });
+
+    })
+
+    .controller('AchievementCtrl', function($scope, $stateParams) {
+
+
+    })
+
+    .controller('ReferralCtrl', function($scope, $stateParams, Referrals) {
+
+        //Referrals Data from JSON
+        Referrals.all().success(function(response) {
+            $scope.referrals = response;
+        });
+
+
         //This holds all the data for referrals the user has.
-        $scope.referrals = [{
+        /*$scope.referrals = [{
             "name": "Paolo Calaguian",
             "imageurl": "img/paopic.jpg",
             "StartDate": "November 21,2014",
@@ -166,5 +149,5 @@ angular.module('starter.controllers', [])
             "StartDate": "March 18, 2005",
             "TokensReceived": "20"
 
-        }];
+        }];*/
     });

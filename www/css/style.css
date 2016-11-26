@@ -44,7 +44,7 @@ td.cell{
     height: auto;
 }
 .volimage{
-    margin-left: 30%;
+    margin-left: 0%;
     width: 100%;
     height: auto;
 }
@@ -85,6 +85,14 @@ div{
     margin-top: 3%;
 }
 
+.volbox{
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 0px;
+
+
+}
+
 .item-complex .item-content, .item-radio .item-content {
     position: relative;
     z-index: 2;
@@ -116,4 +124,8 @@ div{
 
 .achitext{
     font-size: 7vw;
+}
+
+.tokenarea{
+    background-color: silver;
 }

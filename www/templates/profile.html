@@ -1,43 +1,45 @@
 <ion-view view-title="Profile">
   <ion-content>
-    <div class="profilearea row">
-      <div class="col-40" style="margin-left: 10%; margin-top: 0%;">
-        <img src="{{userimage}}" class="profilepic" /><br />
-        <p style="margin-left: 5%; font-size: 6vw;">{{username}}</p>
+    <div class="card">
+      <div class="profilearea row item item-divider">
+        <div class="col-40" style="margin-left: 10%; margin-top: 0%;">
+          <img src="{{userimage}}" class="profilepic" /><br />
+          <p style="margin-left: 5%; font-size: 6vw;">{{username}}</p>
+        </div>
+        <div class="col-60 item-text-wrap" style="margin-left: 0px; margin-top: 5%; width: 100%;">
+          <table>
+            <tr>
+              <td>
+              </td>
+            </tr>
+            <tr>
+              <td class="cell">
+                Email:
+              </td>
+              <td class="cell">
+                &nbsp {{useremail}}
+              </td>
+            </tr>
+            <tr>
+              <td class="cell">
+                Emp No:
+              </td>
+              <td class="cell">
+                &nbsp {{employeenumber}}
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
-      <div class="col-60" style="margin-left: 0px; margin-top: 5%; width: 100%;">
-        <table>
-          <tr>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td class="cell">
-              Email:
-            </td>
-            <td class="cell">
-              &nbsp {{useremail}}
-            </td>
-          </tr>
-          <tr>
-            <td class="cell">
-              Emp No:
-            </td>
-            <td class="cell">
-              &nbsp {{employeenumber}}
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
 
-    <center>
-      <h3>Achievements</h3>
-    </center>
 
-    <div class="row">
-      <ion-slide-box on-slide-changed="slideHasChanged($index)" class="hackslider" >
-          <ion-slide  ng-repeat="medal in medaldata">
+      <center>
+        <h3>Achievements</h3>
+      </center>
+
+      <div class="row">
+        <ion-slide-box on-slide-changed="slideHasChanged($index)" class="hackslider">
+          <ion-slide ng-repeat="medal in medals">
             <center class="achicontent">
               <h4 class="slidetitle">{{medal.title}}</h4>
               <div class="col">
@@ -46,18 +48,20 @@
               <h4 style="font-size: 3vw;">{{medal.current}} out of {{medal.max}}</h4>
             </center>
           </ion-slide>
-      </ion-slide-box>
-      </center>
-    </div>
-    <div class="tokenarea">
-      <center>
-        <h1>Tokens</h1>
-        <img src="img/tokens.jpg" class="tokenimage" />
-      </center>
-      <div style="float: right;">
-        <p style="font-size: 6vw;">You have {{tokens}} tokens</p>
+        </ion-slide-box>
+      </div>
+      <div class="row">
+        <div class="tokenarea item-divider">
+          <center>
+            <h1>Tokens</h1>
+            <img src="img/tokens.png" class="tokenimage" />
+          </center>
+          <div style="float: right;">
+            <p style="font-size: 6vw;">You have {{tokens}} tokens</p>
 
-        <h2><a href="#app/redeem" class="bottom">Redeem</a></h2>
+            <h2><a href="#app/redeem" class="bottom">Redeem</a></h2>
+          </div>
+        </div>
       </div>
     </div>
   </ion-content>
