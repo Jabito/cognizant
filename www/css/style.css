@@ -6,10 +6,15 @@
     border-width: 5px;
 }
 
+.achicontent{
+	font-variant
+	font-size: 3vw;
+}
+
 .profilepic{
     border-radius: 50%;
     padding: 0px;
-    width: 50%;
+    width: 70%;
     border-style: double;
     border-width: 5px;
 }
@@ -30,21 +35,24 @@
 
 td.cell{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px; 
+    font-size: 3vw; 
 }
 
 .achimage{
     margin-left: 10%;
-    width: 100px;
+    width: 100%;
     height: auto;
 }
 
 .tokenimage{
-    width: 100px;
+	float: left;
+	margin-left: 10%;
+    width: 40%;
     height: auto;
 }
 
 .bottom{
+	font-size: 7vw;
     padding-bottom: 10%;
 }
 
@@ -65,6 +73,7 @@ div{
 }
 
 .box{
+	width: 50%;
     float: left; 
     margin-left: 12%;
     margin-top: 3%;
@@ -76,4 +85,17 @@ div{
     padding: 16px 49px 16px 16px;
     border: none;
     background-color: #2af08a !important;
+}
+
+.slider {
+  height: 100%;
+}
+.slider-slide {
+  padding-top: 80px;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
 }

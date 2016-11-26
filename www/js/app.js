@@ -44,7 +44,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         url: '/profile',
         views: {
           'menuContent': {
-            templateUrl: 'templates/profile.html'
+            templateUrl: 'templates/profile.html',
+			controller: 'ProfileCtrl'
           }
         }
       })
@@ -76,11 +77,11 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       })
 
-      .state('app.achievements', {
-        url: '/achievements',
+      .state('app.volunteer', {
+        url: '/volunteer',
         views: {
           'menuContent': {
-            templateUrl: 'templates/achievements/achievements.html'
+            templateUrl: 'templates/volunteer/volunteer.html'
           }
         }
       });

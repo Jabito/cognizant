@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
-
-    .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+	
+    .controller('AppCtrl', function($scope, $ionicModal, $timeout, $ionicSlideBoxDelegate) {
 
         /*//SQL Initialization
         var db = $cordovaSQLite.openDB({ name: "my.db" });
@@ -42,6 +42,11 @@ angular.module('starter.controllers', [])
             effect: 'fade',
             speed: 500,
         };
+		
+		$scope.nextSlide = function() {
+    $ionicSlideBoxDelegate.next();
+  }
+		
         //This holds all the data for referrals the user has.
         $scope.referrals = [{
             "name": "Paolo Calaguian",
@@ -89,7 +94,7 @@ angular.module('starter.controllers', [])
         }];
         //This holds the achievements the user currently has.
         $scope.medaldata = [{
-            "title": "Perfect Attendance Achievement",
+            "title": "Attendance",
             "rank": "gold",
             "max": "50",
             "current": "40"
@@ -99,12 +104,12 @@ angular.module('starter.controllers', [])
             "max": "30",
             "current": "3"
         }, {
-            "title": "Volounteering",
+            "title": "Volunteering",
             "rank": "silver",
             "max": "20",
             "current": "8"
         }, {
-            "title": "Attendance Achievement",
+            "title": "Attendance",
             "rank": "bronze",
             "max": "12",
             "current": "5"
@@ -148,6 +153,25 @@ angular.module('starter.controllers', [])
             }, 1000);
         };
     })
+	
+	.controller('ProfileCtrl', function($scope, $stateParams, $state, $ionicSlideBoxDelegate) {
+		// Called to navigate to the main app
+  $scope.startApp = function() {
+    $state.go('main');
+  };
+  $scope.next = function() {
+    $ionicSlideBoxDelegate.next();
+  };
+  $scope.previous = function() {
+    $ionicSlideBoxDelegate.previous();
+  };
 
+  // Called each time the slide changes
+  $scope.slideChanged = function(index) {
+    $scope.slideIndex = index;
+  };
+		
+    })
+	
     .controller('PlaylistCtrl', function($scope, $stateParams) {
     });
