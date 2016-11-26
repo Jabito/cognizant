@@ -2,7 +2,7 @@ angular.module('starter.controllers', [])
 
     .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
-        //SQL Initialization
+        /*//SQL Initialization
         var db = $cordovaSQLite.openDB({ name: "my.db" });
 
         // for opening a background db:
@@ -15,7 +15,7 @@ angular.module('starter.controllers', [])
             }, function(err) {
                 console.error(err);
             });
-        };
+        };*/
 
         // Form data for the login modal
         $scope.loginData = {};
