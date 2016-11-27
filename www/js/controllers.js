@@ -111,7 +111,6 @@ angular.module('starter.controllers', [])
                 console.log('Thank you for not eating my delicious ice cream cone');
             });
         };
-
     })
 
     .controller('ReferTestCtrl', function($scope, $stateParams, Referrals) {

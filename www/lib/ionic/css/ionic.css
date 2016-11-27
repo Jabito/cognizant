@@ -3571,7 +3571,7 @@ ion-infinite-scroll {
  * --------------------------------------------------
  */
 p {
-  margin: 0 0 10px; }
+  margin: 15 -40 10px; }
 
 small {
   font-size: 85%; }
@@ -3592,7 +3592,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #000;
   font-weight: 500;
-  font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+  font-family: "- apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
   line-height: 1.2; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small,
   .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small {
@@ -5709,7 +5709,7 @@ ion-tabs.tabs-striped.tabs-color-active-dark .tab-item.tab-item-active, ion-tabs
   border-style: solid;
   font-size: 16px; }
   .item h2 {
-    margin: 0 0 2px 0;
+    margin: 0 0 2px 1;
     font-size: 2.5vw;
     font-weight: normal; }
   .item h3 {
@@ -6282,7 +6282,7 @@ button.item.item-button-right {
     position: relative;
     left: auto;
     width: auto;
-    line-height: 31px; }
+    line-height: 0px; }
   .item-button-right > .button > .button,
   .item-button-right .item-content > .button > .button,
   .item-button-right > .buttons > .button,
@@ -6303,8 +6303,8 @@ button.item.item-button-right {
 .item-avatar .item-content,
 .item-avatar-left,
 .item-avatar-left .item-content {
-  padding-left: 60px;
-  min-height: 60px; }
+  padding-left: 77px;
+  min-height: 75px; }
   .item-avatar > img:first-child,
   .item-avatar .item-image,
   .item-avatar .item-content > img:first-child,
@@ -6314,10 +6314,10 @@ button.item.item-button-right {
   .item-avatar-left .item-content > img:first-child,
   .item-avatar-left .item-content .item-image {
     position: absolute;
-    top: 16px;
-    left: 16px;
-    max-width: 40px;
-    max-height: 40px;
+    top: 2px;
+    left: 3px;
+    max-width: 12vw;
+    max-height: 12vw;
     width: 100%;
     height: 100%;
     border-radius: 50%; }
@@ -6331,7 +6331,7 @@ button.item.item-button-right {
   .item-avatar-right .item-content > img:first-child,
   .item-avatar-right .item-content .item-image {
     position: absolute;
-    top: 16px;
+    top: 0px;
     right: 16px;
     max-width: 40px;
     max-height: 40px;
@@ -6372,10 +6372,10 @@ button.item.item-button-right {
   .item-thumbnail-right .item-content > img:first-child,
   .item-thumbnail-right .item-content .item-image {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    max-width: 80px;
-    max-height: 80px;
+    top: 6px;
+    right: 7px;
+    max-width: 11vw;
+    max-height: 11vw;
     width: 100%;
     height: 100%; }
 

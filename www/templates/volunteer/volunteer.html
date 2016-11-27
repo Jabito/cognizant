@@ -11,8 +11,10 @@
 
               <h3 style="font-size: 5vw"><a href="{{fvol.url}}">{{fvol.title}}</a></h3>
               <div class="volbox">
-                <a><img src="img/{{fvol.image}}.jpg" class="volimage" width="100%" /></a>
+                <a><img ng-src="img/{{fvol.image}}.jpg" class="volimage" width="90%" /></a>
                 <h4>{{fvol.location}}</h4>
+                <h4>Possible Tokens: {{fvol.possibletokens}}</h4>
+                <a href="{{fvol.url}}"><button class="buttonredeem">Join the Cause</button></a>
               </div>
             </center>
           </ion-slide>
@@ -28,7 +30,7 @@
           <center>
           <div class="volbox">
             <h3 style="text-align: center; font-size: 5vw"><a href="{{pvol.url}}">{{pvol.title}}</a></h3>
-            <a><img src="img/{{pvol.image}}.jpg" class="volimage" width="70%" /></a>
+            <a><img ng-src="img/{{pvol.image}}.jpg" class="volimage" width="70%" /></a>
             <h4>{{pvol.location}}</h4>
           </div>
           </center>

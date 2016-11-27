@@ -3,18 +3,21 @@
         "title": "Caring for the Special Needs of childrens",
         "image": "volunteer1",
         "url": "http://www.cognizantfoundation.org/caring-for-the-special-needs-child.html?source=3",
-        "location":" weCan Learning Resource Institute, Kolkata"
+        "location":" weCan Learning Resource Institute, Kolkata",
+        "possibletokens": "3"
     },
     {
         "title": "Aiding the Differently Abled with assistive devices",
         "image": "volunteer2",
         "url": "http://www.cognizantfoundation.org/assistive-devices-for-the-differently-abled.html?source=3",
-        "location":"Bangalore"
+        "location":"Bangalore",
+        "possibletokens": "2"
     },
     {
         "title": "Education for underprivileged youth Programs",
         "image": "volunteer3",
         "url": "http://www.cognizantfoundation.org/skill-training-for-underprivileged-youth-in-telangana-2.html?source=4",
-        "location": "Telangana"
+        "location": "Telangana",
+        "possibletokens": "4"
     }
 ]
