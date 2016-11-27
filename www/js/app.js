@@ -74,7 +74,18 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         url: '/redeem',
         views: {
           'menuContent': {
-            templateUrl: 'templates/redeem/redeem.html'
+            templateUrl: 'templates/redeem/redeem.html',
+            controller: 'RedeemCtrl'
+          }
+        }
+      })
+
+      .state('app.referralstest', {
+        url: '/referralstest',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/referrals/referralstest.html',
+            controller: 'ReferTestCtrl'
           }
         }
       })

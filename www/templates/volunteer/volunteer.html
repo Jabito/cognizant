@@ -12,7 +12,7 @@
               <h3 style="font-size: 5vw"><a href="{{fvol.url}}">{{fvol.title}}</a></h3>
               <div class="volbox">
                 <a><img src="img/{{fvol.image}}.jpg" class="volimage" width="100%" /></a>
-                <h3>{{fvol.location}}</h3>
+                <h4>{{fvol.location}}</h4>
               </div>
             </center>
           </ion-slide>
@@ -25,11 +25,13 @@
     <div class="row">
       <ion-slide-box on-slide-changed="slideHasChanged($index)" class="hackslider">
         <ion-slide ng-repeat="pvol in pvols">
+          <center>
           <div class="volbox">
             <h3 style="text-align: center; font-size: 5vw"><a href="{{pvol.url}}">{{pvol.title}}</a></h3>
             <a><img src="img/{{pvol.image}}.jpg" class="volimage" width="70%" /></a>
-            <h3>{{pvol.location}}</h3>
+            <h4>{{pvol.location}}</h4>
           </div>
+          </center>
         </ion-slide>
       </ion-slide-box>
     </div>

@@ -1,0 +1,23 @@
+<ion-view view-title="Referrals">
+    <ion-content>
+        <div>
+            <div class="border box" ng-repeat="person in referrals">
+
+
+                <div class="list card">
+
+                    <div class="item item-avatar">
+                        <img ng-src="{{person.imageurl}}">
+                        <h2>{{person.name}}</h2>
+                        <p>{{person.StartDate}}</p>
+                    </div>
+
+                    <div class="item item-body">
+                        <br /> Bonus Tokens Received : <strong style="font-size: 3vw;">{{person.TokensReceived}}</strong>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

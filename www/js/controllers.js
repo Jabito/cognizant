@@ -18,8 +18,8 @@ angular.module('starter.controllers', [])
         };*/
         //Setting up some static data
         $scope.employeenumber = "4253627";
-        $scope.username = "Jon Snow";
-        $scope.useremail = "jonsnow@cognizant.com";
+        $scope.username = "Paolo Javier";
+        $scope.useremail = "jprjavier@mymail.mapua.edu.ph";
         $scope.userimage = "img/leopic.jpg";
         $scope.referred = 8;
         $scope.started = "February 26, 2010"
@@ -97,6 +97,29 @@ angular.module('starter.controllers', [])
     .controller('AchievementCtrl', function($scope, $stateParams) {
 
 
+    })
+
+    .controller('RedeemCtrl', function($scope, $stateParams, $ionicPopup) {
+
+        $scope.redeem = function() {
+            var alertPopup = $ionicPopup.alert({
+                title: 'Prize Claimed!',
+                template: 'You redeemed this prize. Please go to the HR to claim it. Thank you. '
+            });
+
+            alertPopup.then(function(res) {
+                console.log('Thank you for not eating my delicious ice cream cone');
+            });
+        };
+
+    })
+
+    .controller('ReferTestCtrl', function($scope, $stateParams, Referrals) {
+
+        //Referrals Data from JSON
+        Referrals.all().success(function(response) {
+            $scope.referrals = response;
+        });
     })
 
     .controller('ReferralCtrl', function($scope, $stateParams, Referrals) {

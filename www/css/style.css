@@ -153,3 +153,7 @@ div{
     margin: 4px 2px;
     cursor: pointer;
 }
+
+.item-avatar{
+    font-size: 2px;
+}

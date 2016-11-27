@@ -5710,7 +5710,7 @@ ion-tabs.tabs-striped.tabs-color-active-dark .tab-item.tab-item-active, ion-tabs
   font-size: 16px; }
   .item h2 {
     margin: 0 0 2px 0;
-    font-size: 16px;
+    font-size: 2.5vw;
     font-weight: normal; }
   .item h3 {
     margin: 0 0 4px 0;
@@ -5723,7 +5723,7 @@ ion-tabs.tabs-striped.tabs-color-active-dark .tab-item.tab-item-active, ion-tabs
     font-size: 10px; }
   .item p {
     color: #666;
-    font-size: 14px;
+    font-size: 2vw;
     margin-bottom: 2px; }
   .item h1:last-child,
   .item h2:last-child,
@@ -6303,8 +6303,8 @@ button.item.item-button-right {
 .item-avatar .item-content,
 .item-avatar-left,
 .item-avatar-left .item-content {
-  padding-left: 72px;
-  min-height: 72px; }
+  padding-left: 60px;
+  min-height: 60px; }
   .item-avatar > img:first-child,
   .item-avatar .item-image,
   .item-avatar .item-content > img:first-child,
@@ -6393,7 +6393,7 @@ button.item.item-button-right {
 
 .item-body {
   overflow: auto;
-  padding: 16px;
+  padding: 0px;
   text-overflow: inherit;
   white-space: normal; }
   .item-body h1, .item-body h2, .item-body h3, .item-body h4, .item-body h5, .item-body h6, .item-body p {
