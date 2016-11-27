@@ -74,8 +74,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         url: '/redeem',
         views: {
           'menuContent': {
-            templateUrl: 'templates/redeem/redeem.html',
-            controller: 'ProfileCtrl'
+            templateUrl: 'templates/redeem/redeem.html'
           }
         }
       })

@@ -57,9 +57,9 @@ playGame.prototype = {
         // setting pin registration point in its center
         pin.anchor.set(0.5);
         //style for text
-        style = { font: "bold 16px Arial", fill: "#000", boundsAlignH: "center", boundsAlignV: "middle" };
+        style = { font: "bold 14px Arial", fill: "#000", boundsAlignH: "center", boundsAlignV: "middle" };
         // adding the text field
-        prizeText = game.add.text(game.world.centerX, game.world.height * 0.8, "", style);
+        prizeText = game.add.text(game.world.centerX, game.world.height * 0.85, "", style);
         infoText = game.add.text(game.world.centerX, game.world.height * 0.9, "", style);
         // setting text field registration point in its center
         prizeText.anchor.set(0.5);
@@ -102,6 +102,6 @@ playGame.prototype = {
         // writing the prize you just won
         prizeText.text = "You won " + slicePrizes[prize] + "!";
         // writing the info
-        infoText.text = "You may claim your prize at the HR office.";
+        infoText.text = " You may claim your prize at the HR office.    ";
     }
 }
