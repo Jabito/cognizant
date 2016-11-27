@@ -21,6 +21,8 @@ angular.module('starter.controllers', [])
         $scope.username = "Jon Snow";
         $scope.useremail = "jonsnow@cognizant.com";
         $scope.userimage = "img/leopic.jpg";
+        $scope.referred = 8;
+        $scope.started = "February 26, 2010"
         $scope.tokens = 5;
 
         // Form data for the login modal

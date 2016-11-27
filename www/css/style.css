@@ -27,16 +27,19 @@
     top: 90px;
 }
 
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .sidemenucontent{
     height: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
-    background-color:#78D2A9;
+    background-color:#FFFFFF;
 }
 
 td.cell{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 3vw; 
+    font-size: 3.2vw; 
 }
 
 .achimage{
@@ -71,6 +74,8 @@ div{
 
 .tokenright{
     float: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 6vw;
 }
 
 .border{
@@ -93,18 +98,23 @@ div{
 
 }
 
+.slidetitle{
+    font-size: 8vw;
+    font-weight: bold;
+}
+
 .item-complex .item-content, .item-radio .item-content {
     position: relative;
     z-index: 2;
     padding: 16px 49px 16px 16px;
     border: none;
-    background-color: #78D2A9 !important;
+    background-color: #FFFFFF !important;
 }
 
 .hackslider {
     position: relative;
     padding-left: 0px;
-    margin-top:5%;
+    margin-top:0%;
     margin-left: 0px;
     width:100%;
 }
