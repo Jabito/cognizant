@@ -2,16 +2,19 @@
     {
         "title": "Health Care Equipments Distribution",
         "image": "volunteer4",
-        "url": "http://www.cognizantfoundation.org/medical-equipment-for-hospital-catering-to-under-privileged-women-and-children.html?source=3"
+        "url": "http://www.cognizantfoundation.org/medical-equipment-for-hospital-catering-to-under-privileged-women-and-children.html?source=3",
+        "location": ""
     },
     {
         "title": "Eye Care to underprivileged",
         "image": "volunteer5",
-        "url": "http://www.cognizantfoundation.org/quality-eye-care-to-underprivileged.html?source=3"
+        "url": "http://www.cognizantfoundation.org/quality-eye-care-to-underprivileged.html?source=3",
+        "location": ""
     },
     {
         "title": "Orthopedics and Pathology Equipment Distribution",
         "image": "volunteer6",
-        "url": "http://www.cognizantfoundation.org/orthopedics-pathology-up-gradation.html?source=3"
+        "url": "http://www.cognizantfoundation.org/orthopedics-pathology-up-gradation.html?source=3",
+        "location": ""
     }
 ]

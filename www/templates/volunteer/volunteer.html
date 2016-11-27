@@ -2,33 +2,36 @@
   <ion-content>
     <div class="col">
       <center>
-        <h3 style="font-size: 4vw">Future Volunteering Events</h3>
+        <h3 style="font-size: 5vw">Future Volunteering Events</h3>
       </center>
       <div class="row">
         <ion-slide-box on-slide-changed="slideHasChanged($index)" class="hackslider">
           <ion-slide ng-repeat="fvol in fvols">
             <center class="achicontent">
 
-              <h3 style="font-size: 2vw"><a href="{{fvol.url}}">{{fvol.title}}</a></h3>
+              <h3 style="font-size: 5vw"><a href="{{fvol.url}}">{{fvol.title}}</a></h3>
               <div class="volbox">
                 <a><img src="img/{{fvol.image}}.jpg" class="volimage" width="100%" /></a>
+                <h3>{{fvol.location}}</h3>
               </div>
             </center>
           </ion-slide>
       </div>
     </div>
     <hr/>
+    <center>
+        <h3 style="font-size: 5vw">Past Events you have joined</h3>
+      </center>
     <div class="row">
       <ion-slide-box on-slide-changed="slideHasChanged($index)" class="hackslider">
         <ion-slide ng-repeat="pvol in pvols">
           <div class="volbox">
-            <h3 style="text-align: center; font-size: 2vw"><a href="{{pvol.url}}">{{pvol.title}}</a></h3>
+            <h3 style="text-align: center; font-size: 5vw"><a href="{{pvol.url}}">{{pvol.title}}</a></h3>
             <a><img src="img/{{pvol.image}}.jpg" class="volimage" width="70%" /></a>
-            </h1>
+            <h3>{{pvol.location}}</h3>
           </div>
         </ion-slide>
       </ion-slide-box>
-    </div>
     </div>
   </ion-content>
 </ion-view>
